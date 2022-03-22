@@ -12,22 +12,10 @@
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Noto+Sans+KR:wght@100;300&display=swap');
 </style>
 <!--폰트 적용 끝-->
-<script src='js/jquery-3.6.0.min.js'></script>
+<script src="resources/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="resources/js_css/about.css">
-
-
-<script>
-$(document).ready(function(){
-	$("#headers").load("header.html");
-
-});
-</script>
-
-
 </head>
 <body>
-<div id="headers"></div>
-
 
 	<section class="about-main-section">
 		<div class=about-main-content>

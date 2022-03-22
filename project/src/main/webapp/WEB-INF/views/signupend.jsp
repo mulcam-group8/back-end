@@ -12,15 +12,9 @@
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="resources/js_css/signupend.css" />
-    <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="resources/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome ㅣ CharCha</title>
-    <script>
-    $(document).ready(function(){
-        $("#headers").load("header.html");
-
-    });
-    </script>
 
 </head>
 

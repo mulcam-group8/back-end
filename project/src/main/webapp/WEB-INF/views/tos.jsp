@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/js_css/tos.css" />
-    <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="resources/jquery-3.6.0.min.js"></script>
     <title>Sign up ㅣ CharCha</title>
 
     <script type="text/javascript">
@@ -42,21 +42,11 @@
         
       }
    </script>
-       <script>
-        $(document).ready(function(){
-            $("#headers").load("header.html");
-    
-        });
-        </script>
+ 
     
   </head>
 
   <body>
-
-      <div id="headers"></div>
-
-       
-        
       <div class="tosmain">
         <form id="frmJoin"  name="frmJoin" action=""  onSubmit="return CheckForm(this)">
           <div class="tostitle">

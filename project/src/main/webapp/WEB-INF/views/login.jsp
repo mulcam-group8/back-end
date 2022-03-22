@@ -12,14 +12,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Noto+Sans+KR:wght@100;300&display=swap');
 </style>
 <!--폰트 적용 끝-->
-<script src="js/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("#headers").load("header.html");
-	
-
-});
-</script>
+<script src="resources/jquery-3.6.0.min.js"></script>
 <style>
 .login_wrapper{
     /*display: block;
@@ -72,7 +65,6 @@ input[type=text], input[type=password]{
 </style>
 </head>
 <body>
-	<div id="headers"></div>
 
 	<div class="login_wrapper">
 			<div class="headertext">

@@ -25,20 +25,12 @@
     });
     </script>
 
-<script>
-    $(document).ready(function(){
-        $("#headers").load("header.html");
-
-    });
-    </script>
-
 <title>Sign up ㅣ CharCha</title>
 
 </head>
 <body>
    
     <!-- <div data-include-path="header.html"></div> -->
-    <div id="headers"></div>
 
 <div class="signform">
     <div class="signtitle">

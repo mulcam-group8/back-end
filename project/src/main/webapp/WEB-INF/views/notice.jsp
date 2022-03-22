@@ -12,7 +12,7 @@
 </style>
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="resources/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice ㅣ CharCha</title>
     <link rel="stylesheet" href="resources/js_css/notice.css" />
@@ -31,8 +31,6 @@
 </head>
 
 <body>
-
-    <div id="headers"></div>
 
     <div class = container>
         <div class="row">

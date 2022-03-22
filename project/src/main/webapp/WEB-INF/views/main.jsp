@@ -14,19 +14,12 @@
 </style>
 <!--폰트 적용 끝-->
 <script src="resources/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("#headers").load("header.jsp");
 
-});
-</script>
 <style type=text/css>
  @import url("resources/js_css/details.css");
 </style>
 </head>
 <body>
-	<div id="headers"></div>
-
 	<div class="containerouter">
 		<div class="imgcontainer">
 			<div class="imginner">

@@ -13,7 +13,7 @@
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="resources/js_css/notice1.css" />
-    <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="resources/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice ㅣ CharCha</title>
     <script>
@@ -36,12 +36,6 @@
 
     </script>
 
-    <script>
-    $(document).ready(function(){
-        $("#headers").load("header.html");
-
-    });
-    </script>
     <style>
         h3 {
             text-align: center;
@@ -56,7 +50,6 @@
 </head>
 
 <body class="body">
-    <div id="headers"></div>
     <h4>NOTICE</h4>
     <hr width="30px" border-color="black">
     <h3>안녕하세요 Charcha입니다!</h3>

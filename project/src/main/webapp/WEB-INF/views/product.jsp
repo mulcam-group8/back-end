@@ -15,13 +15,7 @@
     </style>
     <!--폰트 적용 끝-->
     <!--jquery적용-->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#headers").load("header.html");
-
-        });
-    </script>
+    <script src="resources/jquery-3.6.0.min.js"></script>
     <style type=text/css>
         @import url("resources/js_css/style.css");
 
@@ -61,7 +55,6 @@
 </head>
 
 <body>
-    <div id="headers"></div>
 
     
     <!--이미지 호버 제이쿼리-->
@@ -83,7 +76,7 @@
                 $(this).attr("src", $(this).attr("src").replace("resources/images/tea3.jpg", "resources/images/h3.jpg"));
             });
             $(".hover3").mouseout(function () {
-                $(this).attr("src", $(this).attr("src").replace("resources/images/h3.jpg", ".resources/images/tea3.jpg"));
+                $(this).attr("src", $(this).attr("src").replace("resources/images/h3.jpg", "resources/images/tea3.jpg"));
             });
             $(".hover4").mouseover(function () {
                 $(this).attr("src", $(this).attr("src").replace("resources/images/tea4.jpg", "resources/images/h4.jpg"));
