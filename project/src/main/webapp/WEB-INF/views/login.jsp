@@ -13,6 +13,7 @@
 </style>
 <!--폰트 적용 끝-->
 <script src="resources/jquery-3.6.0.min.js"></script>
+
 <style>
 .login_wrapper{
     /*display: block;
@@ -62,6 +63,10 @@ input[type=text], input[type=password]{
     border-color: #222222 !important;
 }
  
+#loginresult{
+	color : red;
+} 
+ 
 </style>
 </head>
 <body>
@@ -72,67 +77,29 @@ input[type=text], input[type=password]{
 			</div>
 		<br>
 		<div class = "text_body">
-			<form>
+			<form action="login" method="post">
 			<label for="loginId" class="title">아이디</label>
 			<br>
 			<input id="loginId" type="text" name="id" autofocus required="required">
 			<br>
 			<label for="loginPwd" class="title">비밀번호</label>
 			<br>
-			<input id="loginPwd" type="password" name="pwd" autofocus required="required">
-			<br><br>
-			<input id="loginBtn" type= "button" class="loginBtn" value="로그인">
+			<input id="loginPwd" type="password" name="pw" autofocus required="required">
+			<br>
+			<div id="loginresult">
+			<c:if test="${loginresult == \"noid\"}">
+				해당 아이디는 존재하지 않습니다.
+			</c:if>
+			<c:if test="${loginresult == \"nopw\"}">
+				올바른 비밀번호를 입력해주세요.
+			</c:if>
+			</div>
+			<br>
+			<input id="loginBtn" type= "submit" class="loginBtn" value="로그인">
 			</form>
 		</div>
 		
 	</div>
 	
-<script>
-$('input:button').on("click",function(){
-	
-	var idlist = ["java","test","charcha","yul_2","multi"];
-	var pwdlist = ["1234","test","charcha","asdf","0000"];
-	var empty_input = "";
-	var id = document.getElementById("loginId").value;
-	var pwd = document.getElementById("loginPwd").value;
-	
-	var check_id = false;
-	var check_pwd = false;
-	for(var i =0; i<idlist.length;i++){
-		if(id==idlist[i]){
-			check_id = true;
-		}
-	}
-	for(var i=0;i<pwdlist.length;i++){
-		if(pwd==pwdlist[i]){
-			check_pwd = true;
-		}
-	}
-	
-	if(id==empty_input){
-		alert("아이디를 입력하세요");
-	}else if(pwd == empty_input){
-		alert("비밀번호를 입력하세요");
-	}
-	else if(check_id == true && check_pwd == true){  // 해당 아이디가 있을 때
-		location.href="./main.jsp?username="+id;
-	}else if(check_id == false){                // 해당 아이디가 없을 때
-		var confirmmsg = confirm("해당하는 아이디가 없습니다.");
-		if(confirmmsg){  // 확인버튼 클릭
-			location.href = "./login.jsp";     // 회원가입 링크로 변경! 
-		}else{  // 취소버튼 클릭
-			location.href = "./main.jsp";
-		}
-	}else if(check_pwd == false){               // 비밀번호가 다를때
-		var confirmmsg = confirm("비밀번호가 다릅니다");
-		if(confirmmsg){  // 확인버튼 클릭
-			location.href = "./login.jsp";
-		}else{  // 취소버튼 클릭
-			location.href = "./main.jsp";
-		}
-	}
-	
-});
-</script>
 </body>
 </html>
