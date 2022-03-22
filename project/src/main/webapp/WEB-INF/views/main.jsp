@@ -29,13 +29,14 @@ $(document).ready(function(){
 	<div class="containerouter">
 		<div class="imgcontainer">
 			<div class="imginner">
-				<img src="./img/1.jpg">
+				<img src="resources/images/1.jpg">
+
 			</div>
 			<div class="imginner">
-				<img src="./img/4.jpg">
+				<img src="resources/images/4.jpg">
 			</div>
 			<div class="imginner">
-				<img src="./img/3.png">
+				<img src="resources/images/3.png">
 			</div>
 
 		</div>
