@@ -51,12 +51,12 @@ padding-top:350px;
 
 <header class="header">
 	<div class="menu_wrap">
-		<H2 style="font-size:30px"><a href="main.html"><img src="https://see.fontimg.com/api/renderfont4/w1OB8/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Q2hhckNoYQ/millenia-personal-use.png" alt="Cursive fonts"></a>
+		<H2 style="font-size:30px"><a href="main.jsp"><img src="https://see.fontimg.com/api/renderfont4/w1OB8/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Q2hhckNoYQ/millenia-personal-use.png" alt="Cursive fonts"></a>
 </a></H2>
 		
 		
-		<div class="JoinLogin"><a href="tos.html">회원가입</a>&nbsp;
-		<a href="login.html">로그인</a></div>
+		<div class="JoinLogin"><a href="tos.jsp">회원가입</a>&nbsp;
+		<a href="login.jsp">로그인</a></div>
 		
 		
 
@@ -64,15 +64,15 @@ padding-top:350px;
 		<HR>
 		<ul class="dep1">
 
-			<li><a href="about.html">About</a>
+			<li><a href="about.jsp">About</a>
 				</li>
 
-			<li><a href="product.html">상품</a>
+			<li><a href="product.jsp">상품</a>
 				</li>
 
-			<li><a href="basket.html">장바구니</a>
+			<li><a href="basket.jsp">장바구니</a>
 				</li>
-			<li><a href="notice.html">공지사항</a>
+			<li><a href="notice.jsp">공지사항</a>
 			</li>
 
 		</ul>
