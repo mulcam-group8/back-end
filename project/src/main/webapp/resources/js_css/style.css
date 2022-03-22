@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.imgbutton {
+	text-align: center;
+}
+
+.imgbutton1, .imgbutton2, .imgbutton3 {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 3px;
+	background-color: black;
+}
+
+.containerouter {
+	overflow: hidden;
+	z-index: 1;
+}
+
+.imgcontainer {
+	width: 300vw;
+	transition: transform 0.5s;
+}
+
+.imginner {
+	width: 100vw;
+	float: left;
+}
+
+.imginner img {
+	width: 100%
+}
+
+
+/*  상단 메뉴바 */
+.menu_wrap, .boximg 
+{
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right:200px;
+	margin-bottom: 50px;
+}
+
+
+.JoinLogin
+{
+	text-align: right;
+}
+
+
+* {
+	font-family:'Montserrat','Noto Sans KR', sans-serif;/*1. 폰트변경*/
+	
+
+	/* margin: 0; */
+	/* padding: 0; */
+}
+
+h2 {
+	text-align: center;
+
+}
+
+ul, li {
+	list-style: none;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu_wrap {
+	align-self: center;
+	
+}
+
+.menu_wrap .dep1 {
+	
+	font-size: 0;
+	
+}
+
+.menu_wrap .dep1>li {
+	display: inline-block;
+	width: 160px;
+	vertical-align: top;
+	text-align: center;
+	background: #fff;
+	font-size: 16px;
+}
+
+.menu_wrap .dep1>li>a {
+	display: block;
+}
+
+.menu_wrap .dep1>li:hover>.dep2 {
+	display: block;
+}
+
+.menu_wrap .dep2 {
+	padding-top: 5px;
+	text-align: center;
+	display: none;
+	position:absolute;	
+}
+

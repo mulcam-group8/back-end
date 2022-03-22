@@ -1,0 +1,55 @@
+
+table{
+    width: 1300px;
+    height: 250px;
+  
+    margin-left: 300px;
+}
+
+th{
+    width: 1000px;
+    height: 40px;
+}
+
+.num{ 
+    width: 150px;
+}
+
+.title{
+    width:550px;
+}
+.writer{
+    width: 200px;
+}
+
+.writeday{
+    width: 250px;
+}
+
+th{
+   background-color: antiquewhite; text-align: center;
+}
+
+.writenew{
+    display: inline-block;
+    margin: 0 300px;
+    float: right;
+    background-color: #d0b5a4;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black; 
+    border-radius: 5px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+
+}
+
+
+
+.noticewrite1{
+    display: block;
+    margin: 0px auto;
+    width: 900px;
+    height: 1000px;
+}

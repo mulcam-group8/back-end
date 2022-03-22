@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.noticemain img{
+
+    margin: 0 auto;
+    width: 700px;
+}
+
+.noticemain {
+
+    margin: 0 auto;
+    width: 700px;
+}
+
+
+.noticetbutton {
+
+    margin: 70px auto;
+   
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+    
+}
+
+#ntbutton{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+
+}
+
+#ntbutton:hover{
+    background-color:black;
+    color:white
+}

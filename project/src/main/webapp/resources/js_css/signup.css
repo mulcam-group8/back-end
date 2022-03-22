@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+.signform{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 800px;
+}
+
+.signtitle{
+    text-align: center;
+}
+
+.signtop{
+    margin-top: 20px;
+    font-size: 18px;
+    height: 790px;
+}
+
+.signbottom{
+    margin-top: 40px;
+    font-size: 18px;
+    height: 200px;
+}
+
+.signdetail{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detop{
+    font-weight: bold;
+    
+}
+
+#userid, #userpw, #usenick{
+    height: 50px;
+    width: 600px;
+    font-size: 18px;
+}
+
+#useremail{
+    height: 50px;
+    width: 280px;
+    font-size: 18px;
+}
+
+.require{
+    font-weight: bold;
+    font-size: 20px;
+    color:#b94d3f;
+
+}
+.deemail{
+    
+    height: 50px;
+    width: 270px;
+
+    display: flex;
+}
+.emaildot{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    line-height: 5px;
+}
+
+.emailput{
+    height: 50px;
+    width: 250px;
+
+}
+#emailchoose{
+    height: 50px;
+    width: 270px;
+    font-size: 18px;
+    padding-left: 5px;;
+}
+
+.birthput{
+    height: 50px;
+    width: 270px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+#birth{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.signlast{
+    display: flex;
+    flex-direction: row;
+    padding-left:  60px;
+   
+}
+
+.lastleft{
+    margin-right: 50px; 
+}
+
+
+.lastbutton{
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+}
+.lastbtleft{
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+    margin-right: 80px;
+
+}
+
+
+.lastbtrigth{
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.tosmain{
+   display: flex;
+   flex-direction: column;
+ 
+   margin: 0 auto;
+   width: 900px;
+}
+
+.tostitle{
+    flex: 0.2;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+input[type=checkbox] {
+
+    -ms-transform: scale(1.5); /* IE */
+    
+    -moz-transform: scale(1.5); /* FF */
+    
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    
+    -o-transform: scale(1.5); /* Opera */
+    
+    padding: 10px;
+    
+}
+
+.agreecheck{
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+
+.term{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+
+.termleft{
+    width: 15px;
+   
+}
+
+.termright{
+    font-size: 18px;
+    margin-left: 0px;
+    line-height: 1;
+   
+}
+
+.policy{
+    font-size: 14px;
+}
+
+.tosbutton{
+    margin: 0 auto;
+    width: 280px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.tosbtleft{
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+    margin-right: 30px;
+
+}
+
+
+.tosbtrigth{
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+    
+
+}
+
+.tosbt{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+
+}
+
+
+.tosbt:hover{
+    background-color:black;
+    color:white
+}

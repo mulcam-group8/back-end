@@ -1,0 +1,42 @@
+
+@charset "UTF-8";
+
+.endmain{
+    width: 700px;
+    margin: 20px auto;
+}
+
+.endmain img{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.endbt {
+
+    margin: 70px auto;
+   
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;;
+    
+}
+
+#endbutton{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+
+}
+
+#endbutton:hover{
+    background-color:black;
+    color:white
+}

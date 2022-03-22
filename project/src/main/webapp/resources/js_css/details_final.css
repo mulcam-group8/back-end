@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+.detailmain{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.detailtop{
+    flex:400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+
+
+.topleft{
+   width: 600px;
+   height: 600px;
+margin: 0 auto;
+
+}
+.topleft img{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    padding: 20px;;
+}
+
+
+.topright{
+    flex:0.8px;
+    font-size: 20px;
+    padding: 20px 70px;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.topright h2{
+    text-align: left;
+}
+
+.productname{
+    width: 35;
+  
+}
+
+.productname h4{
+    margin: 10px 0px
+}
+
+.detailinfo{
+    height: 400px;
+    width: 500px;;
+    margin: 0 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.produccode{
+
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;;
+
+
+}
+
+.codeleft{
+    width: 200px;
+    font-weight: bold;
+
+}
+
+.coderight{
+    width: 300px;
+  
+}
+
+.productcount{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;
+
+}
+
+.countleft{
+    width: 200px;
+    font-weight: bold;
+
+
+}
+
+.countright{
+    flex: 0.8px;
+}
+
+.productcoupon{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;
+}
+
+
+.couponleft{
+    width: 200px;
+    font-weight: bold;
+
+}
+
+.couponright{
+    flex: 0.8px;
+}
+
+
+.optionchoose{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 60px;
+
+}
+
+.optionleft{
+    width: 200px;
+    font-weight: bold;
+
+}
+
+.optionright{
+    flex: 0.8px;
+}
+
+
+.shipping{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 60px;
+
+}
+
+
+.shipleft{
+    width: 200px;
+    font-weight: bold;
+
+}
+
+.shopright{
+    flex: 0.8px;
+}
+
+
+
+.totalprice{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 70px;;
+
+
+}
+
+.totalleft{
+    width: 200px;
+    font-weight: bold;
+
+}
+
+.totalright{
+    flex: 0.8px;
+}
+
+
+.orderbutton{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 60px;;
+}
+
+.orderleft{
+    width: 200px;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+
+}
+
+.orderright{
+    margin-left: 50px;
+    width: 200px;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+#purschase {
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+#cart {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+* {
+	font-family:'Montserrat','Noto Sans KR', sans-serif;/*1. 폰트변경*/
+	
+
+	/* margin: 0; */
+	/* padding: 0; */
+}
+
+
+.bar{
+    flex:10px;
+    margin: 50px 400px;
+}
+.detailmiddle{
+    flex:1;
+    text-align: center;
+}
+
+.detailbottom{
+    flex:0.5px;
+    text-align: center;
+    line-height: 40px;
+  
+}
+
+#countrg{
+    width: 150px;
+    height: 20px;
+}
+
+
+#oprg{
+    width: 150px;
+    height: 30px;
+
+}

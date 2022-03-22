@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.container{
+    margin: 0 auto;
+}
+
+.row{
+    margin: 0 auto;
+    width: 1000px;
+}
+table{
+    margin: 0 auto;
+    width: 1000px;
+    height: 250px;
+ 
+}
+
+th{
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+   
+}
+
+.num{ 
+    width: 150px;
+}
+
+.title{
+    width:550px;
+}
+.writer{
+    width: 200px;
+}
+
+.writeday{
+    width: 250px;
+}
+
+
+.writenew{
+    display: inline-block;
+    margin-right: 80px;
+    float: right;
+    background-color: #ffffff;
+    font-size: 15px;
+
+    border: 1px solid black; 
+ 
+    text-align: center;
+    width: 100px;
+    height: 50px;
+
+}
+.writenew:hover{
+    background-color:black;
+    color:white
+}
+
+.noticewrite1{
+    display: block;
+    margin: 0px auto;
+    width: 900px;
+    height: 1000px;
+}
