@@ -11,7 +11,7 @@
 </style>
 <!--폰트 적용 끝-->
     <script src='js/jquery-3.6.0.min.js'></script>
-    <link rel="stylesheet" href="./details_final.css" />
+    <link rel="stylesheet" href="resources/js_css/details_final.css" />
     <script>
         $(document).ready(function() {
             $("#headers").load("header.html");
@@ -41,7 +41,7 @@
     
         <div class="detailtop">
             <div class="topleft">
-                <img src="img/details-page-image-02.jpg" alt="">
+                <img src="resources/images/details-page-image-02.jpg" alt="">
             </div>
 
 
@@ -148,7 +148,7 @@
                     SEA BREEZE <br> 씨브리즈
                 </h1>
         
-                <img src="img/details-page-image-03.jpg" alt="">
+                <img src="resources/images/details-page-image-03.jpg" alt="">
         
                 <P class='intro_p'>
                     바다에 불어오는 바람이라는 뜻의 씨브리즈는 이름만큼이나 청량한 느낌이 매력적인 티입니다. <br> 그린 루이보스의
@@ -179,9 +179,9 @@
                         <h1>1. TEA BAG</h1>
                         <p>티백 10개입 (3g*10티백) 18,000</p>
                 
-                        <img src="img/details-page-image-02.jpg" alt="">
+                        <img src="resources/images/details-page-image-02.jpg" alt="">
                         <!-- 이미지 사이 간격  -->
-                        <img src="img/details-page-image-03.jpg" alt="">
+                        <img src="resources/images/details-page-image-03.jpg" alt="">
                 
                         <h4 id='seabreeze'>
                             씨브리즈 티백 <br> 개별포장으로 언제 어디서나 간편하게 즐길 수 있는 씨브리즈 티백 10개가 한상자에
@@ -202,7 +202,7 @@
                     <h1>2. MINI TIN</h1>
                     <p>미니틴 35g (잎차) 19,000</p>
             
-                    <img src="img/details-type2-01.jpg" alt="">
+                    <img src="resources/images/details-type2-01.jpg" alt="">
             
                     <h4 id='seabreeze'>
                         씨브리즈 미니틴 <br> 청사과를 연상하게 하는 연두색 미니틴 안에 씨브리즈 티 35g이 들어있어요. <br>
@@ -225,9 +225,9 @@
                     <h1>3. CLASSIC TIN</h1>
                     <p>클래식틴 100g (잎차) 34,000</p>
             
-                    <img src="img/details-type3-01.jpg" alt="">
+                    <img src="resources/images/details-type3-01.jpg" alt="">
                     <!-- 이미지 사이 간격  -->
-                    <img src="img/details-type3-02.jpg" alt="">
+                    <img src="resources/images/details-type3-02.jpg" alt="">
             
                     <h4 id='seabreeze'>
                         씨브리즈 클래식틴 <br> 클래식한 사각형의 틴케이스 안에 에코페이퍼로 포장된 씨브리즈 100g이 들어있어요. <br>

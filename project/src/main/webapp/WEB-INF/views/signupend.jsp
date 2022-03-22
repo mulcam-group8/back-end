@@ -10,7 +10,7 @@
 </style>
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./signupend.css" />
+    <link rel="stylesheet" href="resources/js_css/signupend.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome ㅣ CharCha</title>
@@ -28,11 +28,11 @@
 
     
         <div class = "endmain" >
-            <img src="img/welcome.png" width="700" >
+            <img src="resources/images/welcome.png" width="700" >
         </div>
 
         <div class="endbt">
-        <input id="endbutton" type="button" value="확인" onclick="location.href='main.html'">
+        <input id="endbutton" type="button" value="확인" onclick="location.href='main.jsp'">
         </div> 
      
 

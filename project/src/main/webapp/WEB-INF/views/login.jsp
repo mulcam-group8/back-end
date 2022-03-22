@@ -122,20 +122,20 @@ $('input:button').on("click",function(){
 		alert("비밀번호를 입력하세요");
 	}
 	else if(check_id == true && check_pwd == true){  // 해당 아이디가 있을 때
-		location.href="./main.html?username="+id;
+		location.href="./main.jsp?username="+id;
 	}else if(check_id == false){                // 해당 아이디가 없을 때
 		var confirmmsg = confirm("해당하는 아이디가 없습니다.");
 		if(confirmmsg){  // 확인버튼 클릭
-			location.href = "./login.html";     // 회원가입 링크로 변경! 
+			location.href = "./login.jsp";     // 회원가입 링크로 변경! 
 		}else{  // 취소버튼 클릭
-			location.href = "./main.html";
+			location.href = "./main.jsp";
 		}
 	}else if(check_pwd == false){               // 비밀번호가 다를때
 		var confirmmsg = confirm("비밀번호가 다릅니다");
 		if(confirmmsg){  // 확인버튼 클릭
-			location.href = "./login.html";
+			location.href = "./login.jsp";
 		}else{  // 취소버튼 클릭
-			location.href = "./main.html";
+			location.href = "./main.jsp";
 		}
 	}
 	

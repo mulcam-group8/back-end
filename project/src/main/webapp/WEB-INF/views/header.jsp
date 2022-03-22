@@ -45,8 +45,8 @@ padding-top:350px;
 	
 </style>
 </head>
-<script src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+<script src="resources/js_css/script.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/js_css/style.css">
 <body>
 
 <header class="header">

@@ -12,7 +12,7 @@
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./tos.css" />
+    <link rel="stylesheet" href="resources/js_css/tos.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <title>Sign up ㅣ CharCha</title>
 
@@ -23,7 +23,7 @@
         var chk2=document.frmJoin.U_checkAgreement2.checked;
         
         if(chk1 && chk2) {
-            location.href="signup.html"
+            location.href="signup.jsp"
             return false;
         }
         if(!chk1 && !chk2) {
@@ -278,7 +278,7 @@
 
           <div class="tosbutton">
             <div class="tosbtleft">
-              <input class="tosbt" type="button" value="취소" onclick="location.href='main.html'">
+              <input class="tosbt" type="button" value="취소" onclick="location.href='main.jsp'">
             </div>
             <div class="tosbtrigth">
               <input class="tosbt" type="submit" value="다음" >

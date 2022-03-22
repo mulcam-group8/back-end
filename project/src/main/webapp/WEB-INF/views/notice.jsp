@@ -14,7 +14,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice ㅣ CharCha</title>
-    <link rel="stylesheet" href="./notice.css" />
+    <link rel="stylesheet" href="resources/js_css/notice.css" />
     <script>
         $(document).ready(function(){
             $("#headers").load("header.html");
@@ -47,7 +47,7 @@
                 <tbody>
                     <tr>
                         <td>Notice</td>
-                        <td><a href="./notice1.html">안녕하세요 Charcha입니다!</a></td>
+                        <td><a href="./notice1.jsp">안녕하세요 Charcha입니다!</a></td>
                         <td>관리자</td>
                         <td>2022-02-01</td>
                     </tr>

@@ -11,7 +11,7 @@
 </style>
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./notice1.css" />
+    <link rel="stylesheet" href="resources/js_css/notice1.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice ㅣ CharCha</title>
@@ -62,11 +62,11 @@
     <br><br><br><br>
     
         <div class = "noticemain" >
-            <img src="img/notice.png" width="700" >
+            <img src="resources/images/notice.png" width="700" >
         </div>
 
         <div class="noticetbutton">
-        <input id="ntbutton" type="button" value="목록으로" onclick="location.href='notice.html'">
+        <input id="ntbutton" type="button" value="목록으로" onclick="location.href='notice.jsp'">
         </div> 
      
 

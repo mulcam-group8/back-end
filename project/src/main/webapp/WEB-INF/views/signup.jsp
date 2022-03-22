@@ -15,8 +15,8 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
-<link rel="stylesheet" href="./signup.css" />
-<link rel="stylesheet" href="./tos.css" />
+<link rel="stylesheet" href="resources/js_css/signup.css" />
+<link rel="stylesheet" href="resources/js_css/tos.css" />
 
 <script type="text/javascript">
     $(function(){
@@ -46,7 +46,7 @@
 
     <div class="signtop">
             <!-- 백엔드와 연결부분 action -->
-            <form action="signupend.html"" method="get">   
+            <form action="signupend.jsp"" method="get">   
             <fieldset>
                 <legend class="require">[필수 입력]</legend>
                 <div class="signdetail">
@@ -156,7 +156,7 @@
 
     <div class="lastbutton">
         <div class="lastbtleft">
-       <input class="tosbt" type="button" value="취소" onclick="location.href='main.html'">
+       <input class="tosbt" type="button" value="취소" onclick="location.href='main.jsp'">
         </div>
         <div class="lastbtrigth">
        <input class="tosbt" type="submit" value="가입하기">

@@ -12,7 +12,8 @@
 </style>
 <!--폰트 적용 끝-->
 <script src='js/jquery-3.6.0.min.js'></script>
-<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="resources/js_css/about.css">
+
 
 <script>
 $(document).ready(function(){
@@ -29,7 +30,7 @@ $(document).ready(function(){
 
 	<section class="about-main-section">
 		<div class=about-main-content>
-			<img class="about-image" src="img/about-main-image-01.jpg" height=600>
+			<img class="about-image" src="resources/images/about-main-image-01.jpg" height=600>
 		</div>
 		<div class="line">
 			<hr style="border: solid 1px black;">

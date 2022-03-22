@@ -11,7 +11,7 @@
 </style>
 <!--폰트 적용 끝-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./basket.css" />
+    <link rel="stylesheet" href="resources/js_css/basket.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basket ㅣ CharCha</title>
@@ -49,11 +49,11 @@
 
     
         <div class = "nonbasket" >
-            <img src="img/basket.png" width="700" >
+            <img src="resources/images/basket.png" width="700" >
         </div>
 
         <div class="basketbutton">
-        <input id="bsbutton" type="button" value="확인" onclick="location.href='main.html'">
+        <input id="bsbutton" type="button" value="확인" onclick="location.href='main.jsp'">
         </div> 
      
 

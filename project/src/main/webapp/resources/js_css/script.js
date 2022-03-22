@@ -27,53 +27,53 @@ const p11 = document.querySelector("#p11");
 const p12 = document.querySelector("#p12");
 
  function productClick1(){
-     location.href="details.html";
+     location.href="details.jsp";
    }
    p1.addEventListener("click", productClick1);
 
 
   function productClick2(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p2.addEventListener("click", productClick2);
 
    function productClick3(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p3.addEventListener("click", productClick3);
    function productClick4(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p4.addEventListener("click", productClick4);
    function productClick5(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p5.addEventListener("click", productClick5);
    function productClick6(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p6.addEventListener("click", productClick6);
    function productClick7(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p7.addEventListener("click", productClick7);
    function productClick8(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p8.addEventListener("click", productClick8);
    function productClick9(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p9.addEventListener("click", productClick9);
    function productClick10(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p10.addEventListener("click", productClick10);
    function productClick11(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p11.addEventListener("click", productClick11);
    function productClick12(){
-      location.href="details.html";
+      location.href="details.jsp";
    }
    p12.addEventListener("click", productClick12);
