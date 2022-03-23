@@ -37,10 +37,10 @@ public class CartDAOImpl implements CartDAO{
 	        sqlSession.delete("cart.delete", cartId); 
 	    }*/
 	 
-	    /*@Override
+	    @Override
 	    public void deleteAll(String memberId) {
 	        sqlSession.delete("cart.deleteAll", memberId);
-	    }*/
+	    }
 	 
 	    @Override
 	    public void update(int cartId) {

@@ -29,9 +29,18 @@ public class CartController {
 		}
 		dto.setMemberId(memberid);
 		cartService.insert(dto); //장바구니 테이블에 저장됨
-		return "cart"; // 장바구니 목록으로 이동
+		return "redirect:/cart"; // 장바구니 목록으로 이동
+
 
 	}
+	@RequestMapping("deleteAll.do")
+    public String deleteAll(HttpSession session) {
+        String userid=(String)session.getAttribute("memberId");
+        if(userid!=null) {
+            cartService.deleteAll(userid);
+        }
+        return "buy";
+    }
 
 	// cart페이지와 맵핑되는 메소드
 	@RequestMapping("/cart")
@@ -61,8 +70,4 @@ public class CartController {
         	}// mv end
 	}// string end
 	
-	@RequestMapping("/buy")
-	public String endbuy() {
-		return "buy";
-	}
 }// class end

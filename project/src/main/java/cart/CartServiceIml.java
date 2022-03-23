@@ -34,11 +34,11 @@ public class CartServiceIml implements CartService {
 	    public void delete(int cart_id) {
 	        cartDao.delete(cart_id);
 	    }
-	 
+	  */
 	    @Override
-	    public void deleteAll(String userid) {
-	        cartDao.deleteAll(userid);
-	    } */
+	    public void deleteAll(String memberId) {
+	        cartDao.deleteAll(memberId);
+	    } 
 	 
 	    @Override
 	    public void update(int cart_id) {

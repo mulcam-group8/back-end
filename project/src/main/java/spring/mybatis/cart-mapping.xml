@@ -16,6 +16,9 @@
  	 from charcha_memberlist m, charcha_cart c, charcha_Productlist p
    		where m.memberId =c.memberId and c.productId=p.productId and c.memberId=#{memberId} order by cartId
    	</select>
+   	 <delete id="deleteAll">
+        delete from charcha_cart where memberId=#{memberId}
+    </delete>
    	
    	
    <select id="sumMoney" parameterType="String" resultType="int">

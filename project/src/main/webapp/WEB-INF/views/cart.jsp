@@ -24,7 +24,7 @@ $("#btnList").click(function(){
 
 $("#btnDelete").click(function(){
     if(confirm("상품을 구매하시겠습니까")){
-        location.href="buy";
+        location.href="deleteAll.do";
     }
 });
 });
