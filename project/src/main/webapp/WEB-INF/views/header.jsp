@@ -69,7 +69,7 @@ padding-top:350px;
 		
 			<td>${memberId}님 반갑습니다.</td> 
 		<div align="right">
-				<td class="login"><a href="/logout" style="text-decoration:none;">로그아웃</a></td>
+				<td class="login"><a href="logout" style="text-decoration:none;">로그아웃</a></td>
 		
 		</div>	
 		</tr>
