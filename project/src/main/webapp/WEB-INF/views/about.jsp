@@ -13,7 +13,7 @@
 </style>
 <!--폰트 적용 끝-->
 <script src="resources/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="resources/js_css/about.css">
+<link rel="stylesheet" href="resources/js_css/about.css?after">
 </head>
 <body>
 
@@ -82,13 +82,13 @@
 				<!-- 사이 공백줄  -->
 				<div data-columno="2" id="section2_column2" class="about-main-context">
 					<div class="context-wrapper">
-						<h3>E-mail</h3>
+						<h3 class="tmp">E-mail</h3>
 						<p class="contact-text">hello@charcha.kr</p>
 						<!-- 사이 공백줄  -->
-						<h3>Instagram</h3>
+						<h3 class="tmp">Instagram</h3>
 						<p class="contact-text">@charcha<p>
 						<!-- 사이 공백줄  -->
-						<h3>KaKaoPlus</h3>
+						<h3 class="tmp">KaKaoPlus</h3>
 						<p class="contact-text">@차차</p>
 					</div>
 				</div>

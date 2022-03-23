@@ -20,7 +20,7 @@
 			right: 0;
 		}
 
-        h3 {
+        .footername {
             text-align: center;
             color: rgb(167, 167, 167);
             font-style: italic;
@@ -52,7 +52,7 @@
 <br>
                 <p class="" style="text-align: center; font-size: 16px;">
                     누구나 쉽게 삶 속에서 차를 즐길 수 있길 바라는 마음을 담았습니다.</p>
-                <h3>CHARCHA차차</h3>
+                <h3 class="footername">CHARCHA차차</h3>
                 
                  <div id="go_top">
 			<div class="icon" align="right">
