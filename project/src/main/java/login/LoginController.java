@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -58,4 +59,13 @@ public class LoginController {
 		return mv;
 		
 	}
+	
+	//logout
+		@RequestMapping("/logout")
+		   public ModelAndView logout(HttpSession session) {
+				
+		       session.invalidate();
+		       ModelAndView mv = new ModelAndView("redirect:/");
+		       return mv;
+		   }
 }

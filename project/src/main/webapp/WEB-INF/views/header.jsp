@@ -55,9 +55,25 @@ padding-top:350px;
 </a></H2>
 		
 		
+		<!-- <div class="JoinLogin"><a href="tos">회원가입</a>&nbsp;
+		<a href="login">로그인</a></div> -->
+		
+		
+		<c:if test="${empty memberId }">
 		<div class="JoinLogin"><a href="tos">회원가입</a>&nbsp;
 		<a href="login">로그인</a></div>
+		</c:if>
 		
+		<c:if test="${!empty memberId }">
+		<tr>
+		
+			<td>${memberId}님 반갑습니다.</td> 
+		<div align="right">
+				<td class="login"><a href="/logout" style="text-decoration:none;">로그아웃</a></td>
+		
+		</div>	
+		</tr>
+		</c:if>	
 		
 
 		
