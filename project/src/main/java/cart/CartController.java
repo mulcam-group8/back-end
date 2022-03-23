@@ -28,7 +28,7 @@ public class CartController {
 			return "login";
 		}
 		dto.setMemberId(memberid);
-		// CartService.insert(dto); //장바구니 테이블에 저장됨
+		cartService.insert(dto); //장바구니 테이블에 저장됨
 		return "cart"; // 장바구니 목록으로 이동
 
 	}

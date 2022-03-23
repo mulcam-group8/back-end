@@ -7,7 +7,7 @@
    <insert id="insert" parameterType="cartdto">
         insert into charcha_cart ( cartId, memberId,  productId, productCount)
         values 
-          (select * from (select(max(cartId)+1 from charcha_cart)), #{memberId}, #{productId}, #{productCount} )
+          (cartId, #{memberId}, #{productId}, #{productCount} )
     </insert>
   
   <select id="listCart" parameterType="String" resultType="cartdto">

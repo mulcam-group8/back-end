@@ -34,7 +34,7 @@ $("#btnDelete").click(function(){
 <body>
 	<h2>장바구니</h2>
 	<c:choose>
-		<c:when test="${map.productCount == 0 }">
+		<c:when test="${map.count == 0 }">
      장바구니가 비었습니다.
     </c:when>
 
@@ -74,7 +74,6 @@ $("#btnDelete").click(function(){
 						</td>
 					</tr>
 				</table>
-				<button id="btnUpdate">수정</button>
 				<button type="button" id="btnDelete">장바구니 비우기</button>
 				
 			</form>
