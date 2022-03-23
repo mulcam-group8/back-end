@@ -13,5 +13,18 @@
 	select memberPw from charcha_memberlist where memberId=#{memberId}
 </select>
 
+<select id="findid" parameterType="memberdto" resultType="String">
+	select memberId from charcha_memberlist where memberName=#{memberName} and memberEmail=#{memberEmail}
+</select>
+
+<select id="findpw" parameterType="memberdto" resultType="String">
+	select memberPw from charcha_memberlist 
+	where memberId=#{memberId} and memberName=#{memberName} 
+	and memberEmail=#{memberEmail}
+</select>
+
+<update id="replacepw" parameterType="memberdto">
+	update charcha_memberlist set memberPw=#{memberPw} where memberId=#{memberId}
+</update>
 
 </mapper>

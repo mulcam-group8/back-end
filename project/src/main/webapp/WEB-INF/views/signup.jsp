@@ -39,7 +39,7 @@
 
     <div class="signtop">
             <!-- 백엔드와 연결부분 action -->
-            <form action="signupend.jsp"" method="get">   
+            <form action="signupend.jsp" method="get">   
             <fieldset>
                 <legend class="require">[필수 입력]</legend>
                 <div class="signdetail">

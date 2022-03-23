@@ -28,4 +28,6 @@
 <!-- 4. annotation scan 태그 -->
 <context:component-scan base-package="test"></context:component-scan>
 <context:component-scan base-package="login"></context:component-scan>
+<context:component-scan base-package="product"/>
+
 </beans>

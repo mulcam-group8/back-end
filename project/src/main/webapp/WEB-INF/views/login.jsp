@@ -28,7 +28,7 @@
 }
 
 span.title {
-	font-size: 25px;
+	font-size: 32px;
 	font-weight : bold;
     /*line-height: 32px;*/
 }
@@ -49,7 +49,7 @@ input[type=text], input[type=password]{
 }
 
 .loginBtn{
-	font-size : 15px;
+	font-size : 20px;
     display: inline-block;
     width: 40%;
     height: 60px;
@@ -97,6 +97,8 @@ input[type=text], input[type=password]{
 			<br>
 			<input id="loginBtn" type= "submit" class="loginBtn" value="로그인">
 			</form>
+			<br>
+			<a href="findid">아이디/비밀번호 찾기</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup">회원가입</a>
 		</div>
 		
 	</div>

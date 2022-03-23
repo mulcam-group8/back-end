@@ -6,7 +6,7 @@
 
 <!-- 1. sql 실행 결과 XXXDTO 매핑 -->
 <typeAliases>
-	<typeAlias type="test.MemberDTO" alias="memberdto"/>
+	<typeAlias type="login.MemberDTO" alias="memberdto"/>
 </typeAliases>
 
 </configuration>

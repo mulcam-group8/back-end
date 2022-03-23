@@ -29,4 +29,24 @@ public class LoginServiceImpl implements LoginService {
 		return result;
 	}
 
+	@Override
+	public String findid(MemberDTO dto) {
+		String memberId = dao.findid(dto);
+		
+		return memberId;
+	}
+
+	@Override
+	public String findpw(MemberDTO dto) {
+		String memberPw = dao.findpw(dto);
+		
+		return memberPw;
+	}
+
+	@Override
+	public void replacepw(MemberDTO dto) {
+		dao.replacepw(dto);
+		
+	}
+
 }

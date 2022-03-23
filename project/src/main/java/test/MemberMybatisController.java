@@ -2,6 +2,9 @@ package test;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -20,10 +23,13 @@ public class MemberMybatisController {
 //service memberlist 메소드 전체회원 조회 결과 모델, mybatis/memberlist.jsp 뷰
 	
 	@RequestMapping("/membermybatislist")
-	public ModelAndView memberlist() {
+	public ModelAndView memberlist(HttpServletRequest request) {
+		HttpSession session = request.getSession();
 		ModelAndView mv = new ModelAndView();
-		List<MemberDTO> list = service.memberlist();
-		mv.addObject("memberlist",list);
+		
+		String s = (String)session.getAttribute("memberId");
+		System.out.println(s);
+		mv.addObject("memberlist",s);
 		mv.setViewName("mybatis/memberlist");
 		
 		return mv;

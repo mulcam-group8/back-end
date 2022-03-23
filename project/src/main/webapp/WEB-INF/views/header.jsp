@@ -86,7 +86,7 @@ padding-top:350px;
 			<li><a href="product">상품</a>
 				</li>
 
-			<li><a href="basket">장바구니</a>
+			<li><a href="cart">장바구니</a>
 				</li>
 			<li><a href="notice">공지사항</a>
 			</li>

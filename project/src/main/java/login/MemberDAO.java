@@ -20,4 +20,18 @@ public class MemberDAO {
 		
 		return result;
 	}
+	
+	public String findid(MemberDTO dto) {
+		String memberId = (String)session.selectOne("login.findid",dto);
+		return memberId;
+	}
+	
+	public String findpw(MemberDTO dto) {
+		String count = (String)session.selectOne("login.findpw",dto);
+		return count;
+	}
+	
+	public void replacepw(MemberDTO dto) {
+		session.update("login.replacepw", dto);
+	}
 }
