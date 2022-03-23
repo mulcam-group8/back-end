@@ -1,5 +1,8 @@
 package login;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -20,9 +23,11 @@ public class LoginController {
 	}
 	
 	@PostMapping("/login")
-	public ModelAndView loginresult(@RequestParam("id") String memberId,@RequestParam("pw") String memberPw) {
+	public ModelAndView loginresult(@RequestParam("id") String memberId,@RequestParam("pw") String memberPw, HttpServletRequest request) {
 		String answer;
 		ModelAndView mv = new ModelAndView();
+		HttpSession session = request.getSession();
+		
 		if(memberId==null) {
 			answer="noid";
 		}else if(memberPw == null) {
@@ -45,6 +50,7 @@ public class LoginController {
 		
 		if(answer.equals("success")) {
 			mv.setViewName("main");
+			session.setAttribute("memberId", memberId);
 		}else {			
 			mv.setViewName("login");
 		}
