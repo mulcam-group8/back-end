@@ -244,6 +244,7 @@
 
 
 	<a href="${pageContext.request.contextPath}/product">상품목록</a>
+
 </body>
 </html>
 

@@ -8,6 +8,7 @@
         insert into charcha_cart ( cartId, memberId,  productId, productCount)
         values 
           (cartId, #{memberId}, #{productId}, #{productCount} )
+
     </insert>
   
   <select id="listCart" parameterType="String" resultType="cartdto">

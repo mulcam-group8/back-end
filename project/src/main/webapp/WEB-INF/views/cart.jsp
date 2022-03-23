@@ -19,12 +19,12 @@
 <script>
 $(function(){
 $("#btnList").click(function(){
-    location.href="${path}/shop/product/list.do";
+    location.href="product";
 });
 
 $("#btnDelete").click(function(){
-    if(confirm("장바구니를 비우시겠습니까?")){
-        location.href="${path}/shop/cart/deleteAll.do";
+    if(confirm("상품을 구매하시겠습니까")){
+        location.href="buy";
     }
 });
 });
@@ -40,13 +40,14 @@ $("#btnDelete").click(function(){
 
 		<c:otherwise>
 			<form id="form1" name="form1" method="post"
-				action="${path}/shop/cart/update.do">
+				action="buy">
 				<table border="1" width="400px">
 					<tr>
 						<th>상품명</th>
 						<th>단가</th>
 						<th>수량</th>
 						<th>금액</th>
+						<th>삭제</th>
 					</tr>
 					<c:forEach var="row" items="${map.list}">
 						<tr align="center">
@@ -55,7 +56,7 @@ $("#btnDelete").click(function(){
 							<td>${row.productPrice}원</td>
 
 							<td><input type="number" name="productCount" style="width: 30px;"
-								value="${row.productCount}">
+								value="${row.productCount}" onclick="changedb()">
 
 
 								<input type="hidden" name="cartId" value="${row.cartId}">
@@ -63,7 +64,7 @@ $("#btnDelete").click(function(){
 
 							</td>
 							<td>${row.money}원</td>
-							
+							<td><a href="deleteproduct">삭제</a></td>
 						</tr>
 					</c:forEach>
 					<tr>
@@ -74,12 +75,20 @@ $("#btnDelete").click(function(){
 						</td>
 					</tr>
 				</table>
-				<button type="button" id="btnDelete">장바구니 비우기</button>
+				<button type="button" id="btnDelete">구매하기</button>
 				
 			</form>
 		</c:otherwise>
 	</c:choose>
-	<button type="button" id="btnList">상품목록</button>
+	<button type="button" id="btnList">계속 쇼핑하기</button>
+	
+	<script>
+	function changedb() {
+		const count = document.getElementById('productCount').value;
+		
+	}
+	
+	</script>
 </body>
 </html>
 

@@ -19,7 +19,7 @@ public class CartController {
 	@Qualifier("cartservice")
     CartService cartService;
 
-	@RequestMapping("insert.do")
+	@RequestMapping("/insert")
 	public String insert(@ModelAttribute CartDTO dto, HttpSession session) {
 		// 로그인 여부 체크 - 세션에 저장된 아이디 확인
 		String memberid = (String) session.getAttribute("memberId");
@@ -57,7 +57,12 @@ public class CartController {
                 return mv;
         	}else{ // 로그인하지 않은 상태
         		return new ModelAndView("login", "", null);
-//로그인을 하지 않았으면 로그인 페이지로 이동시킨다.
-}// mv end
-}// string end
+        		//로그인을 하지 않았으면 로그인 페이지로 이동시킨다.
+        	}// mv end
+	}// string end
+	
+	@RequestMapping("/buy")
+	public String endbuy() {
+		return "buy";
+	}
 }// class end
