@@ -103,3 +103,5 @@ input[type=text], input[type=password]{
 	
 </body>
 </html>
+
+<%@ include file="footer.jsp" %>

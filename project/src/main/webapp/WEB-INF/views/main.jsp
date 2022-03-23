@@ -43,12 +43,9 @@
 		</div>
 		
 	</div>
-<br>
-<br>
-<p class="" style="text-align: center; font-size: 16px;">
-누구나 쉽게 삶 속에서 차를 즐길 수 있길 바라는 마음을 담았습니다.</p>
 
-	
 
 </body>
 </html>
+
+<%@ include file="footer.jsp" %>

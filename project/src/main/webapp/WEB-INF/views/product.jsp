@@ -301,14 +301,11 @@
 
                 </div>
             </div>
-            <hr>
-            <footer id="footer">
-                <p class="" style="text-align: center; font-size: 16px;">
-                    누구나 쉽게 삶 속에서 차를 즐길 수 있길 바라는 마음을 담았습니다.</p>
-                <h3>CHARCHA차차</h3>
-            </footer>
+   
         </div>
     </div>
 
 	<script src="resources/js_css/script.js"></script>
 </body>
+
+<%@ include file="footer.jsp" %>
