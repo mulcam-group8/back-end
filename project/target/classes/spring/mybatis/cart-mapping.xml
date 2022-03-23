@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="cart">
+  
+   <insert id="insert" parameterType="cartdto">
+        insert into charcha_cart ( cartId, memberId,  productId, productCount)
+        values 
+          (select * from (select(max(cartId)+1 from charcha_cart)), #{memberId}, #{productId}, #{productCount} )
+    </insert>
+  
+  <select id="listCart" parameterType="String" resultType="cartdto">
+  	 select cartId, c.memberId as memberId, memberName, p.productId as productId, productName, productPrice, (productPrice*productCount) as money, productCount
+ 	 from charcha_memberlist m, charcha_cart c, charcha_Productlist p
+   		where m.memberId =c.memberId and c.productId=p.productId and c.memberId=#{memberId} order by cartId
+   	</select>
+   	
+   	
+   <select id="sumMoney" parameterType="String" resultType="int">
+ 
+        select ifnull(sum(productPrice*productCount),0)
+        from charcha_cart c, charcha_Productlist p
+        where c.productId=p.productId and memberId=#{memberId}
+   </select>
+      
+  </mapper>

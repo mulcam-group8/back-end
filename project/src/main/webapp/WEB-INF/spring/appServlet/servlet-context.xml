@@ -18,6 +18,7 @@
 	<context:component-scan base-package="logout"></context:component-scan>
 	<context:component-scan base-package="test"></context:component-scan>
 	<context:component-scan base-package="cart"></context:component-scan>
+	<context:component-scan base-package="product"></context:component-scan>
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
@@ -37,7 +38,8 @@
 	<mvc:view-controller path="/tos" view-name="tos" />
 	<mvc:view-controller path="/login" view-name="login" />
 	<mvc:view-controller path="/product" view-name="product" />
-	<mvc:view-controller path="/basket" view-name="basket" />
+	<mvc:view-controller path="/details" view-name="details" />
+	<mvc:view-controller path="/cart" view-name="cart" />
 	<mvc:view-controller path="/notice" view-name="notice" />
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<beans:property name="prefix" value="/WEB-INF/views/" />

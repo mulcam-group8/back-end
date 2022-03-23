@@ -1,20 +1,26 @@
-package kdt.project.charcha.cart;
+package cart;
 
 public class CartDTO {
 	
 	private int cartId;
     private String memberId;
-    private String name;
+    private String memberName;
     private int productId;
     private String productName;
-    private int price;
+    private int productPrice;
     private int money;
     private int productCount;
     
 
+	
+
+
 	public int getCartId() {
 		return cartId;
 	}
+
+
+
 
 
 	public void setCartId(int cartId) {
@@ -22,9 +28,15 @@ public class CartDTO {
 	}
 
 
+
+
+
 	public String getMemberId() {
 		return memberId;
 	}
+
+
+
 
 
 	public void setMemberId(String memberId) {
@@ -32,14 +44,23 @@ public class CartDTO {
 	}
 
 
-	public String getName() {
-		return name;
+
+
+
+	public String getMemberName() {
+		return memberName;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+
+
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
 	}
+
+
+
 
 
 	public int getProductId() {
@@ -47,9 +68,15 @@ public class CartDTO {
 	}
 
 
+
+
+
 	public void setProductId(int productId) {
 		this.productId = productId;
 	}
+
+
+
 
 
 	public String getProductName() {
@@ -57,19 +84,31 @@ public class CartDTO {
 	}
 
 
+
+
+
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
 
-	public int getPrice() {
-		return price;
+
+
+
+	public int getProductPrice() {
+		return productPrice;
 	}
 
 
-	public void setPrice(int price) {
-		this.price = price;
+
+
+
+	public void setProductPrice(int productPrice) {
+		this.productPrice = productPrice;
 	}
+
+
+
 
 
 	public int getMoney() {
@@ -77,9 +116,15 @@ public class CartDTO {
 	}
 
 
+
+
+
 	public void setMoney(int money) {
 		this.money = money;
 	}
+
+
+
 
 
 	public int getProductCount() {
@@ -87,15 +132,21 @@ public class CartDTO {
 	}
 
 
+
+
+
 	public void setProductCount(int productCount) {
 		this.productCount = productCount;
 	}
 
 
+
+
+
 	@Override
 	public String toString() {
-		return "CartDTO [cartId=" + cartId + ", memberId=" + memberId+ ", name=" + name + ", productId=" + productId
-                + ", productName=" + productName + ", price=" + price + ", money=" + money + ", productCount=" + productCount + "]";
+		return "CartDTO [cartId=" + cartId + ", memberId=" + memberId+ ", productName=" + productName + ", productId=" + productId
+                + ", productName=" + productName + ", productPrice=" + productPrice + ", money=" + money + ", productCount=" + productCount + "]";
 	}
     
     

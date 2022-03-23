@@ -33,11 +33,7 @@
             letter-spacing: 0.03vh;
         }
     </style>
-<script type="text/javascript">
-	$(document).ready(function(){
-		//jquery code
-	});
-</script>
+
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 </head>
@@ -56,7 +52,7 @@
                 
                  <div id="go_top">
 			<div class="icon" align="right">
-				<a href="#"><img src="resources/images/tealeaf.png" alt="상단으로 가기"
+				<a href="#"><img src="${pageContext.request.contextPath}/resources/images/tealeaf.png" alt="상단으로 가기"
 					width="50" /></a>
 					
 					

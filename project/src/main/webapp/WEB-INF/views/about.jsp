@@ -75,7 +75,7 @@
 				
 				<div data-columno="1" id="section2_column1" class="about-main-title">
 					<div class="context-wrapper">
-						<h2>Contact us</h2><br> <!-- bold처리  -->
+						<h2 >Contact us</h2><br> <!-- bold처리  -->
 					</div>
 				</div>
 					
