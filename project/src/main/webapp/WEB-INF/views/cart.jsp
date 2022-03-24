@@ -47,7 +47,7 @@ margin-bottom:100px;
 </head>
 	<c:choose>
 		<c:when test="${map.count == 0 }">
-     <h2 class="empty">장바구니가 비었습니다.</h2>
+     <h2 class="empty"><img width="700" src="resources/images/emptycart.png"></h2>
     </c:when>
 
 		<c:otherwise>
