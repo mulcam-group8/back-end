@@ -60,7 +60,7 @@
         </div>
 
         <div class="noticetbutton">
-        <input id="ntbutton" type="button" value="목록으로" onclick="location.href='notice.jsp'">
+        <input id="ntbutton" type="button" value="목록으로" onclick="location.href='${pageContext.request.contextPath}/notice'">
         </div> 
      
 
