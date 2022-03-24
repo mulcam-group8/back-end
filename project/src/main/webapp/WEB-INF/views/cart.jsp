@@ -77,7 +77,7 @@ margin-bottom:100px;
 
 							</td>
 							<td>${row.money}원</td>
-							<td><a href="deleteproduct">삭제</a></td>
+							<td><a href="delete.do?cartId=${row.cartId}"">삭제</a></td>
 						</tr>
 					</c:forEach>
 					<tr>

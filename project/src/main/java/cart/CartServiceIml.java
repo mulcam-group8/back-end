@@ -34,20 +34,19 @@ public class CartServiceIml implements CartService {
 	    }
 	    
 	 
-	   /* @Override
-	    public void delete(int cart_id) {
-	        cartDao.delete(cart_id);
+	   @Override
+	    public void delete(int cartId) {
+	        cartDao.delete(cartId);
 	    }
-	  */
+	  
 	    @Override
 	    public void deleteAll(String memberId) {
 	        cartDao.deleteAll(memberId);
 	    } 
 	 
 	    @Override
-	    public void update(int cart_id) {
-	        // TODO Auto-generated method stub
-	 
+	    public void update(int cartId) {
+	    	 cartDao.update(cartId);
 	    }
 	 
 	    @Override
@@ -57,13 +56,12 @@ public class CartServiceIml implements CartService {
 	 
 	    @Override
 	    public int countCart(String userid, int product_id) {
-	        // TODO Auto-generated method stub
 	        return 0;
 	    }
 	 
+	  /*
 	    @Override
 	    public void updateCart(CartDTO dto) {
-	        // TODO Auto-generated method stub
 	 
 	    }
 	 
@@ -72,7 +70,7 @@ public class CartServiceIml implements CartService {
 	        cartDao.modifyCart(dto);
 	    }
 		
-	 
+	 */
 	  
 	
 }

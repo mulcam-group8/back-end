@@ -18,17 +18,17 @@ public class SignupController {
 	@Qualifier("signupservice")
 	SignupService service;
 	
-	@RequestMapping("/sign")    // ì•½ê´€ë™ì˜ í˜ì´ì§€ ì¶œë ¥
+	@RequestMapping("/sign")    // ¾à°üµ¿ÀÇ ÆäÀÌÁö Ãâ·Â
 	public String signupform() {
 		return "tos";
 	}
 	
-	@GetMapping("/signup")    // íšŒì›ê°€ì… í˜ì´ì§€ ì¶œë ¥
+	@GetMapping("/signup")    // È¸¿ø°¡ÀÔ ÆäÀÌÁö Ãâ·Â
 	public String signup() {
 		return "signup";
 	}
 	
-	@PostMapping("/signup")    // ì…ë ¥ë°›ì€ ì •ë³´ì— ë”°ë¼ íšŒì›ê°€ì… ì—¬ë¶€ íŒë‹¨ 
+	@PostMapping("/signup")    // ÀÔ·Â¹ŞÀº Á¤º¸¿¡ µû¶ó È¸¿ø°¡ÀÔ ¿©ºÎ ÆÇ´Ü 
 	public ModelAndView signresult(@RequestParam("userid") String memberId,@RequestParam("userpw") String memberPw,
 			@RequestParam("usernick") String memberName, @RequestParam("useremail") String memberEmail,
 			@RequestParam("user_address") String emailAddress) {
@@ -43,7 +43,7 @@ public class SignupController {
 		
 		boolean id_check = service.checkid(memberId);
 		
-		if(id_check) {  // ì•„ì´ë””ê°€ ì‚¬ìš©ê°€ëŠ¥í•˜ë‹¤ë©´
+		if(id_check) {  // ¾ÆÀÌµğ°¡ »ç¿ë°¡´ÉÇÏ´Ù¸é
 			signupresult = "yes";
 			service.insertmember(dto);
 			mv.setViewName("redirect:/signupend");
@@ -57,7 +57,7 @@ public class SignupController {
 		return mv;
 	}
 	
-	@RequestMapping("/signupend")  // íšŒì›ê°€ì… ì™„ë£Œ
+	@RequestMapping("/signupend")  // È¸¿ø°¡ÀÔ ¿Ï·á
 	public String signupend() {
 		return "signupend";
 	}

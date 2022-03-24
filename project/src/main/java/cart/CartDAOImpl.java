@@ -22,7 +22,7 @@ public class CartDAOImpl implements CartDAO{
 	        // TODO Auto-generated method stub
 	        return null;
 	    }
-	    // Ïû•Î∞îÍµ¨ÎãàÏóê Îç∞Ïù¥ÌÑ∞Î•º Ï∂îÍ∞ÄÌï®
+	    // ¿ÂπŸ±∏¥œø° µ•¿Ã≈Õ∏¶ √ﬂ∞°«‘
 	    @Override
 	    public void insert(CartDTO dto) {
 	        sqlSession.insert("cart.insert", dto); 
@@ -36,10 +36,10 @@ public class CartDAOImpl implements CartDAO{
 	  
 	   
 	    
-	    /*@Override
+	    @Override
 	    public void delete(int cartId) {
 	        sqlSession.delete("cart.delete", cartId); 
-	    }*/
+	    }
 	 
 	    @Override
 	    public void deleteAll(String memberId) {
@@ -48,8 +48,7 @@ public class CartDAOImpl implements CartDAO{
 	 
 	    @Override
 	    public void update(int cartId) {
-	        // TODO Auto-generated method stub
-	 
+	    	 sqlSession.update("cart.update", cartId); 
 	    }
 	 
 	    @Override
@@ -59,13 +58,11 @@ public class CartDAOImpl implements CartDAO{
 	 
 	    @Override
 	    public int countCart(String memberId, int productId) {
-	        // TODO Auto-generated method stub
 	        return 0;
 	    }
-	 
+	 /*
 	    @Override
 	    public void updateCart(CartDTO dto) {
-	        // TODO Auto-generated method stub
 	 
 	    }
 	 
@@ -74,4 +71,5 @@ public class CartDAOImpl implements CartDAO{
 	        sqlSession.update("cart.modify", dto);
 	    }
 	   
+	  */
 	}

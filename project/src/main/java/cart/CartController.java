@@ -11,9 +11,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import login.MemberDTO;
 
 @Controller
 public class CartController {
@@ -23,17 +22,18 @@ public class CartController {
 
 	@RequestMapping("/insert")
 	public String insert(@ModelAttribute CartDTO dto, HttpSession session) {
-		// ì‚¬ìš©ì idë¥¼ ë°›ì•„ì˜´
+		// »ç¿ëÀÚ id¸¦ ¹Ş¾Æ¿È
 		String memberid = (String) session.getAttribute("memberId");
 		if (memberid == null) {
 
 			return "login";
 		}
 		dto.setMemberId(memberid);
-		cartService.insert(dto); // cart í…Œì´ë¸”ì— ë°ì´í„° ì¶”ê°€
-		return "redirect:/cart"; // cart RequestMapping ë¶€ë¶„ í˜¸ì¶œ
+		cartService.insert(dto); // cart Å×ÀÌºí¿¡ µ¥ÀÌÅÍ Ãß°¡
+		return "redirect:/cart"; // cart RequestMapping ºÎºĞ È£Ãâ
 
 	}
+	//Àå¹Ù±¸´Ï ¸ğµÎ »èÁ¦(=±¸¸Å)
 	@RequestMapping("deleteAll.do")
     public String deleteAll(HttpSession session) {
         String userid=(String)session.getAttribute("memberId");
@@ -42,31 +42,39 @@ public class CartController {
         }
         return "buy";
     }
+	
+	//Àå¹Ù±¸´Ï °³º° »èÁ¦
+	@RequestMapping("delete.do")
+    public String delete(@RequestParam int cartId) {
+        cartService.delete(cartId);
+        return "redirect:/cart";
+    }
+	
 
-	// cartì •ë³´ ì¡°íšŒ
+	// cartÁ¤º¸ Á¶È¸
 	@RequestMapping("/cart")
         public ModelAndView list(HttpSession session, ModelAndView mv) {
 
 		Map<String, Object> map=new HashMap<>();
         	
         	String memberid=(String)session.getAttribute("memberId");
-        	//ì„¸ì…˜ì— ì €ì¥ëœ ì•„ì´ë””ê°€ ìˆë‹¤ë©´ 
+        	//¼¼¼Ç¿¡ ÀúÀåµÈ ¾ÆÀÌµğ°¡ ÀÖ´Ù¸é 
         	if(memberid!=null) { 
         		List<CartDTO> list=cartService.listCart(memberid);//
-                int sumMoney=cartService.sumMoney(memberid);// ì´ ê¸ˆì•¡
+                int sumMoney=cartService.sumMoney(memberid);// ÃÑ ±İ¾×
         		 
-                map.put("sum", sumMoney);
-                map.put("fee", 2500);
-                map.put("totalsum", sumMoney+2500);
-                map.put("list", list); //ì¥ë°”êµ¬ë‹ˆ ë‚´ì—­
-                map.put("count", list.size()); //ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ìƒí’ˆ ê°œìˆ˜                
-                mv.setViewName("cart"); // ì¥ë°”êµ¬ë‹ˆ viewë¡œ ì´ë™
-                mv.addObject("map", map); // map ì •ë³´ë¥¼ ì¥ë°”êµ¬ë‹ˆ viewë¡œ ë„˜ê²¨ì¤Œ
+                map.put("sum", sumMoney);//»óÇ°µé ±İ¾×
+                map.put("fee", 2500);//¹è¼Û·á
+                map.put("totalsum", sumMoney+2500);//ÃÑ ±İ¾×
+                map.put("list", list); //Àå¹Ù±¸´Ï ³»¿ª
+                map.put("count", list.size()); //Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ° °³¼ö                
+                mv.setViewName("cart"); // Àå¹Ù±¸´Ï view·Î ÀÌµ¿
+                mv.addObject("map", map); // map Á¤º¸¸¦ Àå¹Ù±¸´Ï view·Î ³Ñ°ÜÁÜ
                 
                 return mv;
-        	}else{ // ì„¸ì…˜ì— ì €ì¥ëœ ì•„ì´ë””ê°€ ì—†ë‹¤ë©´
+        	}else{ // ¼¼¼Ç¿¡ ÀúÀåµÈ ¾ÆÀÌµğ°¡ ¾ø´Ù¸é
         		return new ModelAndView("login", "", null);
-        		//ë¡œê·¸ì¸í˜ì´ì§€ë¡œ ì´ë™
+        		//·Î±×ÀÎÆäÀÌÁö·Î ÀÌµ¿
         	}// mv end
 	}// string end
 	
