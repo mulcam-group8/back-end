@@ -33,10 +33,6 @@ public class CartServiceIml implements CartService {
 	        return cartDao.listCart(userid);
 	    }
 	    
-	    @Override
-	    public List<MemberDTO> listMember(String memberId) {
-	        return cartDao.listMember(memberId);
-	    }
 	 
 	   /* @Override
 	    public void delete(int cart_id) {

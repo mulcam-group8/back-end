@@ -22,10 +22,10 @@ public class CartDAOImpl implements CartDAO{
 	        // TODO Auto-generated method stub
 	        return null;
 	    }
-	    //Àå¹Ù±¸´Ï¿¡ ´ã±â
+	    //ï¿½ï¿½Ù±ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½
 	    @Override
 	    public void insert(CartDTO dto) {
-	//dto¿¡ ÀúÀåµÈ °ªÀ» ¹Þ¾Æ¼­ sql¼¼¼Ç¿¡ ÀúÀåÇÏ°í cart.insert·Î ³Ñ¾î°¨ mapper·Î.
+	//dtoï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¼ï¿½ sqlï¿½ï¿½ï¿½Ç¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ cart.insertï¿½ï¿½ ï¿½Ñ¾î°¨ mapperï¿½ï¿½.
 	        sqlSession.insert("cart.insert", dto); 
 	    }
 	 
@@ -34,9 +34,7 @@ public class CartDAOImpl implements CartDAO{
 	        return sqlSession.selectList("cart.listCart", memberId);
 	    }
 	   
-	    public List<MemberDTO> listMember(String memberId){
-	    	return sqlSession.selectList("login.listMember", memberId);
-	    }; //¸â¹ö ¸ñ·Ï
+	  
 	   
 	    
 	    /*@Override

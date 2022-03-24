@@ -85,12 +85,7 @@ margin-bottom:100px;
 								${map.sum}원<br> 
 								배송료 :${map.fee}원<br> 
 								<span style="font-size:25px">총합계 : ${map.totalsum}원</span>
-						<%-- 	<c:forEach var="member" items="${map.member}">
-						<tr  align="center">
-							<td colspan="5">${member.memberId }님의 생일은 ${member.birth}</td>
-							</tr>							
-							<c:if test="${member.birth} === ${date}">생일 축하합니다</c:if>
-							</c:forEach> --%>
+						
 						</td>
 					</tr>
 				</table>

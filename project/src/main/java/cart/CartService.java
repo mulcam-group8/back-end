@@ -6,15 +6,14 @@ import login.MemberDTO;
 
 public interface CartService {
 	 List<CartDTO> cartMoney();
-	    void insert(CartDTO dto); //Àå¹Ù±¸´Ï Ãß°¡
-	    List<CartDTO> listCart(String memberId); //Àå¹Ù±¸´Ï ¸ñ·Ï
-	    //void delete(int cartId); //Àå¹Ù±¸´Ï °³º° »èÁ¦
-	    void deleteAll(String memberId); //Àå¹Ù±¸´Ï ºñ¿ì±â
+	    void insert(CartDTO dto); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
+	    List<CartDTO> listCart(String memberId); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	    //void delete(int cartId); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	    void deleteAll(String memberId); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	    void update(int cartId); 
-	    int sumMoney(String memberId); //Àå¹Ù±¸´Ï ±Ý¾× ÇÕ°è
-	    int countCart(String memberId, int productId); //Àå¹Ù±¸´Ï »óÇ° °¹¼ö
-	    void updateCart(CartDTO dto); //Àå¹Ù±¸´Ï ¼öÁ¤ 
+	    int sumMoney(String memberId); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½Ý¾ï¿½ ï¿½Õ°ï¿½
+	    int countCart(String memberId, int productId); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½
+	    void updateCart(CartDTO dto); //ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 	    void modifyCart(CartDTO dto);
 	    
-	    List<MemberDTO> listMember(String memberId); //¸â¹ö ¸ñ·Ï
 }

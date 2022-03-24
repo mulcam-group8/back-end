@@ -4,11 +4,6 @@
 
 <mapper namespace="login">
 
-<select id = "listMember"  resultType = "memberdto"> 
-        select * from charcha_memberlist
-        order by memberId 
-    </select>
-
 <select id="loginid" parameterType="String" resultType="int">
 	select count(*) from charcha_memberlist where memberId = #{memberId}
 </select>
