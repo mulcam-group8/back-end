@@ -23,6 +23,10 @@
     $(function(){
         $("#date1").datepicker();
     });
+    
+    if(${signupresult == "no"}){
+    	alert('중복된 아이디입니다.');
+    }
     </script>
 
 <title>Sign up ㅣ CharCha</title>
@@ -79,12 +83,12 @@
                     <div class="emmailput"> 
                         <select id="emailchoose" name="user_address">
                             
-                               <option value="네이버">naver.com</option>  
-                               <option value="e다음">daum.net</option>  
-                               <option value="한메일">hanmail.net</option>  
-                               <option value="지메일">gmail.com</option>  
-                               <option value="핫메일">hotmail.com</option>  
-                               <option value="네이트">nate.com</option>  
+                               <option value="naver.com">naver.com</option>  
+                               <option value="daum.net">daum.net</option>  
+                               <option value="hanmail.net">hanmail.net</option>  
+                               <option value="gmail.com">gmail.com</option>  
+                               <option value="hotmail.com">hotmail.com</option>  
+                               <option value="nate.com">nate.com</option>  
                             
                            </select>
 
@@ -120,7 +124,7 @@
                <span class="detop">거주 지역 </span>
                <br>
                <br>
-               <select class="birthput" name="user_address">
+               <select class="birthput" name="useraddress">
                 <option value="" disabled> 거주 지역을 선택해주세요</option>  
                    <option value="서울특별시">서울특별시</option>  
                    <option value="부산광역시">부산광역시</option>  
@@ -146,12 +150,6 @@
         </fieldset>
     </div>
 
-	<div id="signupresult">
-		<c:if test="${signupresult == \"no\"}">
-				중복된 아이디입니다.
-		</c:if>
-	</div>
-
     <div class="lastbutton">
         <div class="lastbtleft">
        <input class="tosbt" type="button" value="취소" onclick="location.href='main.jsp'">
@@ -165,9 +163,14 @@
 </div>
     <script>
         includeHTML();
+        
+        if(${signupresult == "no"}){
+        	alert('중복된 아이디입니다.');
+        }
+
         </script>
 
-</body>
+
 </body>
 </html>
 
