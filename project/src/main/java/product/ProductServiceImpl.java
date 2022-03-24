@@ -17,7 +17,7 @@ public class ProductServiceImpl implements ProductService {
     
     @Override
     public List<ProductDTO> listProduct() {
-        return dao.listProduct(); //»óÇ° ¸®½ºÆ® ¸®ÅÏ
+        return dao.listProduct(); //ìƒí’ˆ ëª©ë¡
     }
 
 	@Override

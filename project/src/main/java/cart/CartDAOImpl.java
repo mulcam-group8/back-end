@@ -22,10 +22,9 @@ public class CartDAOImpl implements CartDAO{
 	        // TODO Auto-generated method stub
 	        return null;
 	    }
-	    //��ٱ��Ͽ� ���
+	    // 장바구니에 데이터를 추가함
 	    @Override
 	    public void insert(CartDTO dto) {
-	//dto�� ����� ���� �޾Ƽ� sql���ǿ� �����ϰ� cart.insert�� �Ѿ mapper��.
 	        sqlSession.insert("cart.insert", dto); 
 	    }
 	 
