@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="signup">
+
+<select id="checkid" parameterType="String" resultType="int">
+	select count(*) from charcha_memberlist where memberId = #{memberId}
+</select>
+
+
+ <insert id="insertmember" parameterType="signupdto">
+	insert into charcha_memberlist(memberId,memberPw,memberName,memberEmail) values (#{memberId},#{memberPw},#{memberName},#{memberEmail})
+</insert>
+ 
+  </mapper>

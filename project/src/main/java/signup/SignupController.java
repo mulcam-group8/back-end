@@ -29,21 +29,32 @@ public class SignupController {
 	}
 	
 	@PostMapping("/signup")    // 정보받아와서 insert + id 중복 확인
-	public String signresult(@RequestParam("user_id") String memberId,@RequestParam("user_pw") String memberPw,
-			@RequestParam("user_nick") String memberName, @RequestParam("user_eamil") String memberEmail) {
+	public ModelAndView signresult(@RequestParam("userid") String memberId,@RequestParam("userpw") String memberPw,
+			@RequestParam("usernick") String memberName, @RequestParam("useremail") String memberEmail,
+			@RequestParam("user_address") String emailAddress) {
 		MemberDTO dto = new MemberDTO();
 		dto.setMemberId(memberId);
 		dto.setMemberName(memberName);
 		dto.setMemberPw(memberPw);
-		dto.setMemberEmail(memberEmail);
+		dto.setMemberEmail(memberEmail + "@" + emailAddress);
 		ModelAndView mv = new ModelAndView();
-		
-		//boolean id_check = service.checkid(memberId);
-		//if(id_check)
+		String signupresult = "no";
 		
 		
+		boolean id_check = service.checkid(memberId);
 		
-		return "signupend";
+		if(id_check) {  // 아이디가 중복되지 않은상황
+			signupresult = "yes";
+			service.insertmember(dto);
+			mv.setViewName("redirect:/signupend");
+		}else {
+			signupresult = "no";
+			mv.setViewName("signup");
+			
+		}
+		mv.addObject("signupresult",signupresult);
+		
+		return mv;
 	}
 	
 	@RequestMapping("/signupend")  // 회원가입 완료보여주기

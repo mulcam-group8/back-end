@@ -8,6 +8,7 @@
 <typeAliases>
 	<typeAlias type="login.MemberDTO" alias="memberdto"/>
 	<typeAlias type="cart.CartDTO" alias="cartdto" />
+	<typeAlias type="signup.MemberDTO" alias="signupdto"/>
 </typeAliases>
 
 </configuration>

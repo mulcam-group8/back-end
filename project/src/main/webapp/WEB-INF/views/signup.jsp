@@ -146,6 +146,11 @@
         </fieldset>
     </div>
 
+	<div id="signupresult">
+		<c:if test="${signupresult == \"no\"}">
+				중복된 아이디입니다.
+		</c:if>
+	</div>
 
     <div class="lastbutton">
         <div class="lastbtleft">
