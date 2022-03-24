@@ -24,7 +24,7 @@
         var chk2=document.frmJoin.U_checkAgreement2.checked;
         
         if(chk1 && chk2) {
-            location.href="signup.jsp"
+            location.href="${pageContext.request.contextPath}/signup";
             return false;
         }
         if(!chk1 && !chk2) {

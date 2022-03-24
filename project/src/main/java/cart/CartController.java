@@ -33,7 +33,6 @@ public class CartController {
 		cartService.insert(dto); //장바구니 테이블에 저장됨
 		return "redirect:/cart"; // 장바구니 목록으로 이동
 
-
 	}
 	@RequestMapping("deleteAll.do")
     public String deleteAll(HttpSession session) {

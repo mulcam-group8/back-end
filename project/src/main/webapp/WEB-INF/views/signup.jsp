@@ -36,10 +36,10 @@
     <div class="signtitle">
         <h1> 회원가입 </h1>
      </div>
-
+<form action="signup" method="post">  
     <div class="signtop">
             <!-- 백엔드와 연결부분 action -->
-            <form action="signupend.jsp" method="get">   
+             
             <fieldset>
                 <legend class="require">[필수 입력]</legend>
                 <div class="signdetail">
@@ -47,21 +47,21 @@
                 <label class="detop" for="userid">아이디</label>
                 <br>
                 <br>
-                <input type ="text" id="userid" placeholder=' 아이디를 입력하세요.(2자 이상)'/ required minlength="2">
+                <input type ="text" name="userid" id="userid" placeholder=' 아이디를 입력하세요.(2자 이상)'/ required minlength="2">
             </p>
             <p>
                 <br>
                 <label class="detop" for="userpw">비밀번호</label>
                 <br>
                 <br>
-                <input type ="password" id="userpw" required>
+                <input type ="password" name="userpw" id="userpw" required>
             </p>
             <p>
                 <br>
-                <label class="detop" for="usernick">닉네임</label>
+                <label class="detop" for="usernick">이름</label>
                 <br>
                 <br>
-                <input type ="text" id="usenick" required>
+                <input type ="text" name="usernick" id="usenick" required>
             </p>
             <p>
                 <br>
@@ -72,7 +72,7 @@
                 <br>
                 <div class="deemail">
                     <div class="emailblank">
-                        <input type ="text" id="useremail"  required>
+                        <input type ="text" name="useremail" id="useremail"  required>
                     </div>
                     <div class="emaildot"><p>@</p></div>
 
@@ -110,7 +110,7 @@
                 <label  id="birth"for="birthdate"> 생년월일 </label>
                 <br>
                 <br>
-                <input type="text" class="birthput" name="date" id="date1" size="12" />
+                <input type="text" class="birthput" name="date" name="date" id="date1" size="12" />
 
               
            </p>
@@ -145,7 +145,7 @@
         
         </fieldset>
     </div>
-</div>
+
 
     <div class="lastbutton">
         <div class="lastbtleft">
@@ -154,9 +154,10 @@
         <div class="lastbtrigth">
        <input class="tosbt" type="submit" value="가입하기">
        </div>
+      </div>
 
     </form>
-
+</div>
     <script>
         includeHTML();
         </script>

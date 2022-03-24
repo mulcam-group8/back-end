@@ -98,7 +98,7 @@ input[type=text], input[type=password]{
 			<input id="loginBtn" type= "submit" class="loginBtn" value="로그인">
 			</form>
 			<br>
-			<a href="findid">아이디/비밀번호 찾기</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup">회원가입</a>
+			<a href="findid">아이디/비밀번호 찾기</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sign">회원가입</a>
 		</div>
 		
 	</div>
