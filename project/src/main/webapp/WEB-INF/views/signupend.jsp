@@ -27,7 +27,7 @@
         </div>
 
         <div class="endbt">
-        <input id="endbutton" type="button" value="확인" onclick="location.href='main.jsp'">
+        <input id="endbutton" type="button" value="확인" onclick="location.href='${pageContext.request.contextPath}/main'">
         </div> 
      
 
