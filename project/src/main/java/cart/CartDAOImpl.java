@@ -19,10 +19,9 @@ public class CartDAOImpl implements CartDAO{
 
 	   @Override
 	    public List<CartDTO> cartMoney() {
-	        // TODO Auto-generated method stub
 	        return null;
 	    }
-	    // Àå¹Ù±¸´Ï¿¡ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÔ
+	    // ì¥ë°”êµ¬ë‹ˆì— ë°ì´í„°ë¥¼ ì¶”ê°€í•¨
 	    @Override
 	    public void insert(CartDTO dto) {
 	        sqlSession.insert("cart.insert", dto); 

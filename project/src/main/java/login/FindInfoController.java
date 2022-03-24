@@ -131,12 +131,12 @@ public class FindInfoController {
 		String randompw = new String(array, Charset.forName("UTF-8"));
 		
 		String recipient = email;
-		String subject = "[Charcha]ÀÓ½Ã ºñ¹Ğ¹øÈ£ ¹ß±ŞÇÕ´Ï´Ù.";
-		String body = "<h2>¾È³çÇÏ¼¼¿ä." + name + "´Ô</h2><br><br>"
-				+ "<p>¿äÃ»ÇÏ½Å ÀÓ½Ã ºñ¹Ğ¹øÈ£¸¦ ¹ß±ŞÇØµå·È½À´Ï´Ù.</p>"
-				+ "<p>ÀÓ½Ã ºñ¹Ğ¹øÈ£ : <h2 style='color : blue'>" + randompw 
-				+ "</h2>ÀúÈñ »çÀÌÆ®¿¡ Á¢¼ÓÇÏ¼Å¼­ ·Î±×ÀÎ ÈÄ ºñ¹Ğ¹øÈ£¸¦ º¯°æÇØÁÖ¼¼¿ä.</p><br><br>"
-				+ "<a href='http://localhost:8080/charcha/>»çÀÌÆ® ÀÌµ¿</a>";
+		String subject = "[Charcha]ì„ì‹œ ë¹„ë°€ë²ˆí˜¸ ë°œê¸‰í•©ë‹ˆë‹¤.";
+		String body = "<h2>ì•ˆë…•í•˜ì„¸ìš”." + name + "ë‹˜</h2><br><br>"
+				+ "<p>ìš”ì²­í•˜ì‹  ì„ì‹œ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë°œê¸‰í•´ë“œë ¸ìŠµë‹ˆë‹¤.</p>"
+				+ "<p>ì„ì‹œ ë¹„ë°€ë²ˆí˜¸ : <h2 style='color : blue'>" + randompw 
+				+ "</h2>ì €í¬ ì‚¬ì´íŠ¸ì— ì ‘ì†í•˜ì…”ì„œ ë¡œê·¸ì¸ í›„ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë³€ê²½í•´ì£¼ì„¸ìš”.</p><br><br>"
+				+ "<a href='http://localhost:8080/charcha/>ì‚¬ì´íŠ¸ ì´ë™</a>";
 		
 		Properties props = System.getProperties();
 		
@@ -156,7 +156,7 @@ public class FindInfoController {
 		});
 		session.setDebug(true);
 		
-		Message mimeMessage = new MimeMessage(session); //MimeMessage °´Ã¼ »ı¼º
+		Message mimeMessage = new MimeMessage(session); //MimeMessage ê°ì²´ ìƒì„±
 		mimeMessage.setFrom(new InternetAddress("hdmksm1@naver.com"));
 		mimeMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
 		

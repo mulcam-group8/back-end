@@ -2,19 +2,18 @@ package cart;
 
 import java.util.List;
 
-import login.MemberDTO;
 
 public interface CartService {
 	 List<CartDTO> cartMoney();
-	    void insert(CartDTO dto); // Àå¹Ù±¸´Ï¿¡ µ¥ÀÌÅÍ Ãß°¡
-	    List<CartDTO> listCart(String memberId); // Àå¹Ù±¸´Ï ³»¿ª ¸ğµÎ »ìÆìº¸±â 
-	    void delete(int cartId); // Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦
-	    void deleteAll(String memberId);  // memberId¿¡ ÇØ´çÇÏ´Â Àå¹Ù±¸´Ï ³»¿ª ¸ğµÎ »èÁ¦
-	    void update(int cartId); //Àå¹Ù±¸´Ï »óÇ° °³¼ö ¼öÁ¤ 
+	 void insert(CartDTO dto); // ì¥ë°”êµ¬ë‹ˆì— ë°ì´í„° ì¶”ê°€
+	    List<CartDTO> listCart(String memberId); // ì¥ë°”êµ¬ë‹ˆ ë‚´ì—­ ëª¨ë‘ ì‚´í´ë³´ê¸° 
+	    void delete(int cartId); // ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œ
+	    void deleteAll(String memberId);  // memberIdì— í•´ë‹¹í•˜ëŠ” ì¥ë°”êµ¬ë‹ˆ ë‚´ì—­ ëª¨ë‘ ì‚­ì œ
+	    void update(int cartId); // ì¥ë°”êµ¬ë‹ˆ í…Œì´ë¸” ìˆ˜ì •
 	    int sumMoney(String memberId);
 	    int countCart(String memberId, int productId);
 
-	    /*	    void updateCart(CartDTO dto);// Àå¹Ù±¸´Ï Å×ÀÌºí ¼öÁ¤
+	    /* void updateCart(CartDTO dto);// 
 	    void modifyCart(CartDTO dto);
 	*/    
 }
