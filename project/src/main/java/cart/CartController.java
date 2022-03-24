@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import login.MemberDTO;
+
 @Controller
 public class CartController {
 	@Autowired
@@ -52,14 +54,15 @@ public class CartController {
         	//로그인 상태일 때 실행  
         	if(memberid!=null) { 
         		List<CartDTO> list=cartService.listCart(memberid);//장바구니 목록
+        		List<MemberDTO> member=cartService.listMember(memberid);//장바구니 목록
                 int sumMoney=cartService.sumMoney(memberid);//금액 합계
         		 
+                map.put("member", member);
                 map.put("sum", sumMoney);
                 map.put("fee", 2500);
                 map.put("totalsum", sumMoney+2500);
                 map.put("list", list); //장바구니 목록
-                map.put("count", list.size()); //레코드 갯수
-                
+                map.put("count", list.size()); //레코드 갯수                
                 mv.setViewName("cart"); //이동할 페이지의 이름
                 mv.addObject("map", map); //데이터 저장
                 

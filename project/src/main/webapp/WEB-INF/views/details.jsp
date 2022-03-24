@@ -17,6 +17,8 @@
 	src="${pageContext.request.contextPath}/resources/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/js_css/details_final.css" />
+	<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/js_css/signupend.css" />
 
 <script>
 	function display1() {
@@ -62,11 +64,10 @@
 						<div class="productcount">
 							<div class="countleft">구매수량</div>
 							<div class="ccountright">
-								<select name="productCount">
+								<select id="oprg"name="productCount">
 
 									<c:forEach begin="1" end="10" var="i">
 										<option value="${i}">${i}</option>
-										<!-- 장바구니에  10개 까지 담을수 있다.-->
 									</c:forEach>
 								</select>
 							</div>
@@ -79,7 +80,7 @@
 						</div>
 						<hr>
 						<br>
-						<div class="optionchoose">
+						<!-- <div class="optionchoose">
 							<div class="optionleft">옵션선택</div>
 							<div class="optionright">
 								<select id="oprg">
@@ -91,7 +92,7 @@
 							</div>
 
 						</div>
-
+ -->
 						<div class="shipping">
 							<div class="shipleft">배송비</div>
 							<div class="shipright">2500원</div>
@@ -235,15 +236,15 @@
 				<h4>
 					구성품<br> 씨브리즈 잎차 100g(에코페이퍼 이중포장), 클래식틴, 제품카드, 브랜드카드
 				</h4>
-				<hr class="bar">
 			</div>
 
 		</div>
 
 	</div>
 
-
-	<a href="${pageContext.request.contextPath}/product">상품목록</a>
+ <div class="endbt">
+        <input id="endbutton" type="button" value="상품목록" onclick="location.href='${pageContext.request.contextPath}/product'">
+        </div> 
 
 </body>
 </html>

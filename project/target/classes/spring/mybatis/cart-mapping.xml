@@ -27,5 +27,5 @@
         from charcha_cart c, charcha_Productlist p
         where c.productId=p.productId and memberId=#{memberId}
    </select>
-      
+ 
   </mapper>

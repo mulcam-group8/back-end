@@ -7,6 +7,8 @@ import javax.inject.Inject;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import login.MemberDTO;
  
 
 @Repository("cartdao")
@@ -31,7 +33,12 @@ public class CartDAOImpl implements CartDAO{
 	    public List<CartDTO> listCart(String memberId) {
 	        return sqlSession.selectList("cart.listCart", memberId);
 	    }
-	 
+	   
+	    public List<MemberDTO> listMember(String memberId){
+	    	return sqlSession.selectList("login.listMember", memberId);
+	    }; //¸â¹ö ¸ñ·Ï
+	   
+	    
 	    /*@Override
 	    public void delete(int cartId) {
 	        sqlSession.delete("cart.delete", cartId); 
@@ -69,5 +76,5 @@ public class CartDAOImpl implements CartDAO{
 	    public void modifyCart(CartDTO dto) {
 	        sqlSession.update("cart.modify", dto);
 	    }
-	 
+	   
 	}

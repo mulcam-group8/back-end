@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page import="java.util.Date"%>
+
+	
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
+
+
+
 <%@ include file="header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -72,6 +80,12 @@ $("#btnDelete").click(function(){
 								${map.sum}원<br> 
 								배송료 :${map.fee}원<br> 
 								총합계 : ${map.totalsum}원
+						<%-- 	<c:forEach var="member" items="${map.member}">
+						<tr  align="center">
+							<td colspan="5">${member.memberId }님의 생일은 ${member.birth}</td>
+							</tr>							
+							<c:if test="${member.birth} === ${date}">생일 축하합니다</c:if>
+							</c:forEach> --%>
 						</td>
 					</tr>
 				</table>

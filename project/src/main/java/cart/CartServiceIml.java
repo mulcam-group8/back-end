@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import login.MemberDAO;
+import login.MemberDTO;
+
 @Service("cartservice")
 public class CartServiceIml implements CartService {
 	
@@ -28,6 +31,11 @@ public class CartServiceIml implements CartService {
 	    @Override
 	    public List<CartDTO> listCart(String userid) {
 	        return cartDao.listCart(userid);
+	    }
+	    
+	    @Override
+	    public List<MemberDTO> listMember(String memberId) {
+	        return cartDao.listMember(memberId);
 	    }
 	 
 	   /* @Override
