@@ -41,6 +41,7 @@
 	<mvc:view-controller path="/details" view-name="details" />
 	<mvc:view-controller path="/cart" view-name="cart" />
 	<mvc:view-controller path="/notice" view-name="notice" />
+	<mvc:view-controller path="/notice1" view-name="notice1" />
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<beans:property name="prefix" value="/WEB-INF/views/" />
 	<beans:property name="suffix" value=".jsp" />

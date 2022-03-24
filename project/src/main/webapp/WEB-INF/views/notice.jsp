@@ -46,7 +46,7 @@
                 <tbody>
                     <tr>
                         <td>Notice</td>
-                        <td><a href="./notice1.jsp">안녕하세요 Charcha입니다!</a></td>
+                        <td><a href="${pageContext.request.contextPath}/notice1">안녕하세요 Charcha입니다!</a></td>
                         <td>관리자</td>
                         <td>2022-02-01</td>
                     </tr>
