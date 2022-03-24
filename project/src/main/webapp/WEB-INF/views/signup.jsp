@@ -152,7 +152,7 @@
 
     <div class="lastbutton">
         <div class="lastbtleft">
-       <input class="tosbt" type="button" value="취소" onclick="location.href='main.jsp'">
+       <input class="tosbt" type="button" value="취소" onclick="location.href='${pageContext.request.contextPath}/main'">
         </div>
         <div class="lastbtrigth">
        <input class="tosbt" type="submit" value="가입하기">

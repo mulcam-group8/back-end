@@ -269,7 +269,7 @@
 
           <div class="tosbutton">
             <div class="tosbtleft">
-              <input class="tosbt" type="button" value="취소" onclick="location.href='main.jsp'">
+              <input class="tosbt" type="button" value="취소" onclick="location.href='${pageContext.request.contextPath}/main'">
             </div>
             <div class="tosbtrigth">
               <input class="tosbt" type="submit" value="다음" >
