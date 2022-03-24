@@ -22,7 +22,8 @@
 	;
 </style>
 <script src="resources/jquery-3.6.0.min.js"></script>
-
+ <link rel="stylesheet" href="resources/js_css/notice.css" />
+ <link rel="stylesheet" href="resources/js_css/tos.css" />
 
 <script>
 $(function(){
@@ -37,19 +38,22 @@ $("#btnDelete").click(function(){
 });
 });
 </script>
-
+<style>
+.empty{
+margin:0px auto;
+margin-bottom:100px;
+}
+</style>
 </head>
-<body>
-	<h2>장바구니</h2>
 	<c:choose>
 		<c:when test="${map.count == 0 }">
-     장바구니가 비었습니다.
+     <h2 class="empty">장바구니가 비었습니다.</h2>
     </c:when>
 
 		<c:otherwise>
 			<form id="form1" name="form1" method="post"
 				action="buy">
-				<table border="1" width="400px">
+				<table width="400px" style="text-align: center; border: 1px solid #dddddd">
 					<tr>
 						<th>상품명</th>
 						<th>단가</th>
@@ -64,6 +68,7 @@ $("#btnDelete").click(function(){
 							<td>${row.productPrice}원</td>
 
 							<td><input type="number" name="productCount" style="width: 30px;"
+
 								value="${row.productCount}" onclick="changedb()">
 
 
@@ -76,10 +81,10 @@ $("#btnDelete").click(function(){
 						</tr>
 					</c:forEach>
 					<tr>
-						<td colspan="5" align="right">장바구니 금액 합계 :
+						<td colspan="5" align="right" style="font-weight:bold">장바구니 금액 합계 :
 								${map.sum}원<br> 
 								배송료 :${map.fee}원<br> 
-								총합계 : ${map.totalsum}원
+								<span style="font-size:25px">총합계 : ${map.totalsum}원</span>
 						<%-- 	<c:forEach var="member" items="${map.member}">
 						<tr  align="center">
 							<td colspan="5">${member.memberId }님의 생일은 ${member.birth}</td>
@@ -89,12 +94,19 @@ $("#btnDelete").click(function(){
 						</td>
 					</tr>
 				</table>
-				<button type="button" id="btnDelete">구매하기</button>
+
 				
 			</form>
 		</c:otherwise>
 	</c:choose>
-	<button type="button" id="btnList">계속 쇼핑하기</button>
+	<div class="tosbutton">
+            <div class="tosbtleft">
+            <button type="button" class="tosbt" id="btnDelete">구매하기</button>
+            </div>
+            <div class="tosbtrigth">
+              <button type="button" class="tosbt" id="btnList">쇼핑하기</button>
+          </div>
+          </div>
 	
 	<script>
 	function changedb() {
